@@ -1,0 +1,14 @@
+<h1>oh no! You have a new task? Tell me.. </h1>
+
+<%= form_for(@newtask) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <%= f.submit %>
+<% end %>
+
+
+<%=link_to 'Back to all tasks', tasks_path%>
